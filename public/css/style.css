@@ -1,0 +1,115 @@
+.profile-image{
+    border-radius: 50%;
+    clip-path: circle();
+    width: 120px;
+    height: 120px;
+    aspect-ratio: 1/1;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
+    float:left;
+    margin-right: 12px;
+    }
+    .admin{
+        color: #0b5ed7;
+    }
+    .search-button{
+        padding:4px;
+        background-color: #0b5ed7;
+        color:white;
+        border-radius: 10px;
+        float:right;
+        width:5%;
+        height:35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-image-home{
+    border-radius: 50%;
+    clip-path: circle();
+    width: 70px;
+    height: 70px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
+    float:left;
+    margin-right: 12px;
+    }
+    .verified{
+        color:#27a600;
+    }
+    .owner-badge{
+        background: linear-gradient(to right, gold, goldenrod);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+    }
+    .buttones{
+        float:left;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        margin-left: 8px;
+    }
+    .no-post{
+        text-align: center;
+    }
+    .button-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #post-title {
+        color: #000; 
+        text-decoration: none !important; 
+    }
+    .like-btn{
+        margin-top: 12px;
+    }
+    .followers-card{
+        margin-right: auto;
+        position: absolute;
+        width:180px;
+        left: 0;
+    }
+    .center:first-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-image-bar{
+        border-radius: 50%;
+        clip-path: circle();
+        width: 60px;
+        height: 60px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #000000;
+        float:left;
+        margin-right: 12px;
+        vertical-align: middle;
+        margin-bottom: 5px;
+        }
+    .profile-title-bar{
+        vertical-align: middle;
+        align-content: center;
+    }
+    .center{
+        align-content: center;
+    }
+    .navbar-brand {
+        transition: transform 0.3s ease;
+    }
+    
+    .navbar-brand:hover {
+        transform: scale(1.1);
+    }
+    .cardic{
+        margin-bottom: 9px;
+    }
+    #board{
+        float: left;
+        width: 950px;
+        margin-top: 30px;
+    }
+    

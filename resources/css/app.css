@@ -1,0 +1,37 @@
+.profile-image{
+    border-radius: 50%;
+    clip-path: circle();
+    width: 120px;
+    height: 120px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
+    float:left;
+    margin-right: 12px;
+    }
+    .admin{
+        color: #0b5ed7;
+    }
+    .search-button{
+        padding:4px;
+        background-color: #0b5ed7;
+        color:white;
+        border-radius: 10px;
+        float:right;
+        width:5%;
+        height:35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-image-home{
+    border-radius: 50%;
+    clip-path: circle();
+    width: 70px;
+    height: 70px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
+    float:left;
+    margin-right: 12px;
+    }
