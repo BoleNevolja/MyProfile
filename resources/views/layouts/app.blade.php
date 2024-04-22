@@ -35,13 +35,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/hotposts">Trending</a>
                         </li>
-                        @Auth
                         @if(Auth::user()->role == "admin")
                         <li class="nav-item">
                             <a class="nav-link" href="/admin">Admin</a>
                         </li>
                         @endif
-                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
