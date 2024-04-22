@@ -10,6 +10,9 @@ class PostController extends Controller
 {
     public function store(Request $request){
         $name = $request->title;
+        $request->validate([
+            'image' => ['mimes:jpeg,png,jpg'],
+        ]);
         $name = trim($name);
         $c = false;
  if($request->image != null){

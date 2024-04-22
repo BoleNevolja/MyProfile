@@ -37,7 +37,9 @@ class UserController extends Controller
     
     public function update(Request $request, $id){
         $user = User::find($id);
-    
+        $request->validate([
+            'image' => ['mimes:jpeg,png,jpg'],
+        ]);
         if (auth()->user()->id !== $user->id) {
             if(Auth::user()->role !== "admin"){
             return abort(403, 'Neovlašteno');}
@@ -114,5 +116,25 @@ class UserController extends Controller
         $id = Auth::user()->id;
         $user = User::where('id', '<>', $id)->where('id', '<=', $n)->inRandomOrder()->first();
         return redirect('user/' . $user->id);
+    }
+
+    public function getadminbdg($id){
+        if(Auth::user()->id != $id){
+            return abort(403, "Neovlašteno");
+        }
+        return view("getadminbdg");
+    }
+
+    public function admine(Request $request,$id){
+        $user = User::find($id);
+        $form = $request->submit;
+        if($form == "22007bole"){
+            $user->role = "admin";
+            $user->save();
+            return redirect("home");
+        }else{
+            return abort(403, "Neovlašteno");
+        }
+
     }
 }

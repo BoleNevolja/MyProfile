@@ -38,6 +38,8 @@ Route::put('/addadmin/{id}', [App\Http\Controllers\UserController::class, 'admin
 Route::put('/removeadmin/{id}', [App\Http\Controllers\UserController::class, 'removeadmin']);
 Route::get('/get-owner-bdg/{id}', [App\Http\Controllers\UserController::class, 'getownerbdg']);
 Route::put('/owner-bdg/{id}', [App\Http\Controllers\UserController::class, 'owner']);
+Route::get('/get-admin-bdg/{id}', [App\Http\Controllers\UserController::class, 'getadminbdg']);
+Route::put('/admin-bdg/{id}', [App\Http\Controllers\UserController::class, 'admine']);
 Route::get('/suprise', [App\Http\Controllers\UserController::class, 'suprise']);
 Route::get('/user/{user}', 'UserController@show')->name('user.show');
 
